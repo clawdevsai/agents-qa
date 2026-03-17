@@ -1,0 +1,33 @@
+# Dependency Directories
+node_modules/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Environment and Secrets
+.env
+.env.*
+config/credentials/
+config/identity/
+config/devices/
+
+# Runtime and State
+config/logs/
+config/memory/
+config/telegram/
+config/cron/
+config/update-check.json
+config/canvas/
+config/workspace/.openclaw/
+config/agents/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Build Artifacts
+dist/
+build/
+out/

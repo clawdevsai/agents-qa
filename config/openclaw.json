@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.14",
+    "lastTouchedAt": "2026-03-17T14:00:39.068Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-17T13:08:52.351Z",
+    "lastRunVersion": "2026.3.14",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "agents": {
+    "list": [
+      {
+        "id": "qa-senior",
+        "name": "Senior QA Agent",
+        "model": "ollama/qwen3-coder-next:cloud",
+        "skills": [
+          "test-specialist"
+        ]
+      }
+    ]
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8376610224:AAERVnV7WrSvt5p9..........",
+      "allowFrom": [
+        999999999
+      ],
+      "groupPolicy": "allowlist",
+      "streaming": "partial"
+    }
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "models": [
+          {
+            "id": "qwen3-coder-next:cloud",
+            "name": "Qwen 3 Coder Next",
+            "reasoning": true
+          }
+        ],
+        "baseUrl": "http://ollama:11434",
+        "apiKey": "ollama-local",
+        "api": "ollama"
+      }
+    }
+  },
+  "gateway": {
+    "mode": "remote",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "*"
+      ]
+    },
+    "auth": {
+      "token": "clawdev_ai"
+    }
+  }
+}
