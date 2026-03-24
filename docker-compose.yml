@@ -28,6 +28,7 @@ services:
       - ./config/workspace:/home/node/.openclaw/workspace
       - ./config/openclaw.json:/home/node/.openclaw/openclaw.json
       - ./skill-test-specialist:/app/skills/test-specialist
+      - ./skill-qa-bug-investigation:/app/skills/qa-bug-investigation
       - ./projects:/home/node/.openclaw/projects
     environment:
       - OLLAMA_BASE_URL=http://ollama:11434

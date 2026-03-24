@@ -16,7 +16,8 @@
         "name": "Senior QA Agent",
         "model": "ollama/qwen3-coder-next:cloud",
         "skills": [
-          "test-specialist"
+          "test-specialist",
+          "qa-bug-investigation"
         ]
       }
     ]

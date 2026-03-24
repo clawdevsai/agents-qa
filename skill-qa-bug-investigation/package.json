@@ -1,0 +1,11 @@
+{
+  "name": "@ai-labs-claude-skills/qa-bug-investigation",
+  "version": "1.0.0",
+  "description": "Claude AI skill: qa-bug-investigation",
+  "main": "index.js",
+  "files": [
+    "."
+  ],
+  "license": "MIT",
+  "author": "AI Labs"
+}

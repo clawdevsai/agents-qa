@@ -120,7 +120,7 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 ### Skills Path (Container)
 
 - Skills are mounted inside the container at `/app/skills`.
-- Use the QA skill at `/app/skills/test-specialist`.
+- Use QA skills at `/app/skills/test-specialist` and `/app/skills/qa-bug-investigation`.
 - For QA tasks, only change project files inside `/home/node/.openclaw/projects`.
 
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
