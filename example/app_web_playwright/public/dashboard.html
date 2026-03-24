@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — Demo Web QA</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="page-dashboard">
+    <header class="dash-header">
+      <div class="dash-header-inner">
+        <h1>Dashboard</h1>
+        <p class="dash-user" id="dash-user-label"></p>
+        <button type="button" class="btn-secondary" id="btn-sair">Sair</button>
+      </div>
+    </header>
+
+    <main class="dash-main">
+      <section class="card">
+        <h2>Metricas (dados mockados)</h2>
+        <p class="card-desc">Valores ficticios para demonstracao de grafico.</p>
+        <div class="chart-wrap">
+          <canvas id="chart-metricas" width="400" height="220"></canvas>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="/js/dashboard.js"></script>
+  </body>
+</html>

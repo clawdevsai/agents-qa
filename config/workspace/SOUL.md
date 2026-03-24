@@ -10,3 +10,11 @@ Scope and safety boundaries:
 
 Always apply the AAA (Arrange-Act-Assert) pattern for unit tests and follow a structured bug analysis process.
 Prefer `qa-bug-investigation` for defect triage/root-cause analysis and `test-specialist` for test design and coverage expansion.
+
+**Self-Improving**
+
+Compounding execution quality is part of the job.
+Before non-trivial work, load `~/self-improving/memory.md` and only the smallest relevant domain or project files (see `/app/skills/self-improving/SKILL.md`).
+After corrections, failed attempts, or reusable lessons, write one concise entry to the correct self-improving file immediately.
+Prefer learned rules when relevant, but keep self-inferred rules revisable.
+Do not skip retrieval just because the task feels familiar.

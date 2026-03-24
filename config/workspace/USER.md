@@ -15,6 +15,7 @@ _(What do they care about? What projects are they working on? What annoys them? 
 ## QA Agent Runtime Notes
 
 - QA skill path in container: `/app/skills/test-specialist`
+- Self-improving skill path in container: `/app/skills/self-improving` (preferences and lessons in `~/self-improving/`, not a substitute for factual `MEMORY.md`)
 - Project scope for automation and file edits: `/home/node/.openclaw/projects`
 
 ---

@@ -4,3 +4,4 @@
 - ID: qa-senior
 - Emoji: 🦀
 - QA skill path in container: /app/skills/test-specialist
+- Self-improving skill path in container: /app/skills/self-improving

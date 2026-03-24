@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login — Demo Web QA</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>Entrar</h1>
+      <p class="lead">Use as credenciais de demonstracao (veja o README do projeto).</p>
+
+      <form id="form-login" novalidate>
+        <label for="usuario">Usuario</label>
+        <input
+          id="usuario"
+          name="usuario"
+          type="text"
+          autocomplete="username"
+          required
+        />
+
+        <label for="senha">Senha</label>
+        <input
+          id="senha"
+          name="senha"
+          type="password"
+          autocomplete="current-password"
+          required
+        />
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <p id="mensagem" role="alert" aria-live="assertive" hidden></p>
+    </main>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

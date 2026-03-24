@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #0f1419;
+  color: #e6edf3;
+}
+
+.wrap {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.lead {
+  margin: 0 0 1.5rem;
+  color: #8b949e;
+  font-size: 0.95rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+input {
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: #161b22;
+  color: inherit;
+}
+
+input:focus {
+  outline: 2px solid #388bfd;
+  outline-offset: 1px;
+}
+
+button {
+  margin-top: 0.25rem;
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #238636;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+button:focus-visible {
+  outline: 2px solid #388bfd;
+  outline-offset: 2px;
+}
+
+#mensagem {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background: #1c2128;
+  border: 1px solid #30363d;
+}
+
+#mensagem[data-variant="ok"] {
+  border-color: #238636;
+}
+
+#mensagem[data-variant="erro"] {
+  border-color: #f85149;
+}
+
+.page-dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-header {
+  border-bottom: 1px solid #30363d;
+  background: #161b22;
+}
+
+.dash-header-inner {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.dash-header-inner h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.dash-user {
+  margin: 0;
+  flex: 1;
+  font-size: 0.875rem;
+  color: #8b949e;
+}
+
+.btn-secondary {
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background: #21262d;
+  color: #e6edf3;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #30363d;
+}
+
+.btn-secondary:focus-visible {
+  outline: 2px solid #388bfd;
+  outline-offset: 2px;
+}
+
+.dash-main {
+  flex: 1;
+  max-width: 56rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2rem;
+}
+
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.card h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.card-desc {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  color: #8b949e;
+}
+
+.chart-wrap {
+  position: relative;
+  height: 280px;
+}

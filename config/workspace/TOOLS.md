@@ -5,6 +5,8 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 ## Runtime Paths
 
 - QA skill directory inside container: `/app/skills/test-specialist`
+- Self-improving skill (tiered memory, corrections, heartbeat helpers): `/app/skills/self-improving`
+- Agent execution-improvement data (HOT/WARM/COLD): `~/self-improving/` — create with `skills/self-improving/setup.md` if missing
 - Project directory allowed for edits/tests: `/home/node/.openclaw/projects`
 
 ## What Goes Here
