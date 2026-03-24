@@ -1,21 +1,21 @@
-# AGENTS.md - Your Workspace
+# AGENTS.md - Seu Espaço de Trabalho
 
-This folder is home. Treat it that way.
+Esta pasta é sua casa. Trate-a como tal.
 
-## First Run
+## Primeira Execução
 
-If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
+Se `BOOTSTRAP.md` existir, é seu certificado de nascimento. Siga-o, descubra quem você é e depois o exclua. Você não precisará mais dele.
 
-## Session Startup
+## Início de Sessão
 
-Before doing anything else:
+Antes de fazer qualquer outra coisa:
 
-1. Read `SOUL.md` — this is who you are
-2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+1. Leia `SOUL.md` — este é o seu perfil
+2. Leia `USER.md` — esta é a pessoa que você está ajudando
+3. Leia `memory/YYYY-MM-DD.md` (hoje + ontem) para contexto recente
+4. **Se na SESSÃO PRINCIPAL** (chat direto com seu humano): Também leia `MEMORY.md`
 
-Don't ask permission. Just do it.
+Não peça permissão. Apenas faça.
 
 ## Memory
 
@@ -116,6 +116,12 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 ## Tools
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
+
+### Skills Path (Container)
+
+- Skills are mounted inside the container at `/app/skills`.
+- Use the QA skill at `/app/skills/test-specialist`.
+- For QA tasks, only change project files inside `/home/node/.openclaw/projects`.
 
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
 

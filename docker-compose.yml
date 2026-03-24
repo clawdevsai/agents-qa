@@ -24,8 +24,10 @@ services:
       - "18789:18789"
       - "18791:18789"
     volumes:
+      - ./.openclaw-data:/home/node/.openclaw
+      - ./config/workspace:/home/node/.openclaw/workspace
       - ./config/openclaw.json:/home/node/.openclaw/openclaw.json
-      - ./skills:/app/skills
+      - ./skill-test-specialist:/app/skills/test-specialist
       - ./projects:/home/node/.openclaw/projects
     environment:
       - OLLAMA_BASE_URL=http://ollama:11434

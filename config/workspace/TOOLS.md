@@ -2,6 +2,11 @@
 
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
+## Runtime Paths
+
+- QA skill directory inside container: `/app/skills/test-specialist`
+- Project directory allowed for edits/tests: `/home/node/.openclaw/projects`
+
 ## What Goes Here
 
 Things like:
