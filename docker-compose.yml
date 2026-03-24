@@ -22,12 +22,13 @@ services:
     container_name: openclaw
     ports:
       - "18789:18789"
-      - "18791:18791"
+      - "18791:18789"
     volumes:
       - ./config:/home/node/.openclaw
       - ./workspace:/home/node/workspace
     environment:
       - OLLAMA_BASE_URL=http://ollama:11434
+      - OPENCLAW_GATEWAY_TOKEN=clawdevs_ai
     depends_on:
       - ollama
     restart: unless-stopped

@@ -59,12 +59,19 @@
     "mode": "remote",
     "bind": "lan",
     "controlUi": {
+      "dangerouslyDisableDeviceAuth": true,
       "allowedOrigins": [
         "*"
       ]
     },
     "auth": {
-      "token": "clawdev_ai"
+      "mode": "token",
+      "token": "clawdevs_ai"
+    }
+  },
+  "tools": {
+    "agentToAgent": {
+      "enabled": true
     }
   }
 }
