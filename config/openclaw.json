@@ -17,7 +17,8 @@
         "model": "ollama/qwen3-coder-next:cloud",
         "skills": [
           "test-specialist",
-          "qa-bug-investigation"
+          "qa-bug-investigation",
+          "self-improving"
         ]
       }
     ]
@@ -37,7 +38,7 @@
         7299920006
       ],
       "groupPolicy": "allowlist",
-      "streaming": "partial"
+      "streaming": "block"
     }
   },
   "models": {
