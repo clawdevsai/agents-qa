@@ -18,7 +18,18 @@ services:
     restart: unless-stopped
 
   openclaw:
-    image: ghcr.io/openclaw/openclaw:main
+    build:
+      context: .
+      dockerfile_inline: |
+        FROM ghcr.io/openclaw/openclaw:main
+        USER root
+        RUN apt-get update && apt-get install -y \
+          libnspr4 libnss3 libx11-xcb1 libxrandr2 libxcomposite1 libxcursor1 \
+          libxdamage1 libxfixes3 libxi6 libgtk-3-0 libgdk-pixbuf2.0-0 libatk1.0-0 \
+          libasound2 libdbus-1-0 \
+          && rm -rf /var/lib/apt/lists/*
+        USER node
+    image: openclaw-with-browser-deps:local
     container_name: openclaw
     ports:
       - "18789:18789"

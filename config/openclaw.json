@@ -33,9 +33,9 @@
     "telegram": {
       "enabled": true,
       "dmPolicy": "pairing",
-      "botToken": "8376610224:AAERVnV7WrSvt5p9Lf95SAqwnTmjKwqViwo",
+      "botToken": "8376610224:",
       "allowFrom": [
-        7299920006
+        729992
       ],
       "groupPolicy": "allowlist",
       "streaming": "block"
