@@ -9,7 +9,23 @@
     "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
+  "plugins": {
+    "slots": {
+      "memory": "memory-core"
+    }
+  },
   "agents": {
+    "defaults": {
+      "memorySearch": {
+        "enabled": true,
+        "provider": "ollama",
+        "model": "nomic-embed-text",
+        "remote": {
+          "baseUrl": "http://ollama:11434",
+          "apiKey": "ollama-local"
+        }
+      }
+    },
     "list": [
       {
         "id": "qa-senior",
@@ -57,6 +73,16 @@
       }
     }
   },
+  "session": {
+    "maintenance": {
+      "mode": "warn",
+      "pruneAfter": "365d",
+      "maxEntries": 2000,
+      "rotateBytes": "50mb",
+      "maxDiskBytes": "2gb",
+      "highWaterBytes": "1.5gb"
+    }
+  },
   "gateway": {
     "mode": "remote",
     "bind": "lan",
@@ -72,6 +98,7 @@
     }
   },
   "tools": {
+    "profile": "coding",
     "agentToAgent": {
       "enabled": true
     }

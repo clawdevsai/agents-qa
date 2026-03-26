@@ -177,6 +177,11 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`
 - **WhatsApp:** No headers — use **bold** or CAPS for emphasis
 
+### Telegram — avisar quando termina
+
+- Em **DM Telegram**, quando a tarefa for **longa ou multi-passo** (várias ferramentas, investigação longa), ou quando o humano pedir para avisar ao terminar, fecha com uma **última linha** explícita: **✅ Concluído** e, se fizer sentido, **uma linha** com o resultado (ex.: “testes passaram” / “ficheiro X atualizado”).
+- Não dupliques: se a resposta principal já deixa claro que terminou, podes omitir o “✅ Concluído”.
+
 ## 💓 Heartbeats - Be Proactive!
 
 When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just reply `HEARTBEAT_OK` every time. Use heartbeats productively!
