@@ -30,10 +30,12 @@ services:
       - ./skills/test-specialist:/app/skills/test-specialist
       - ./skills/qa-bug-investigation:/app/skills/qa-bug-investigation
       - ./skills/self-improving:/app/skills/self-improving
-      - ./projects:/home/node/.openclaw/projects
+      - C:/Users/Administrator/Workspace/lukeware/clawdevs-ai/control-panel/frontend:/home/node/.openclaw/projects/frontend
+      - C:/Users/Administrator/Workspace/lukeware/clawdevs-ai/control-panel/backend:/home/node/.openclaw/projects/backend
     environment:
       - OLLAMA_BASE_URL=http://ollama:11434
       - OPENCLAW_GATEWAY_TOKEN=clawdevs_ai
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
     depends_on:
       - ollama
     restart: unless-stopped

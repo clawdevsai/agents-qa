@@ -29,8 +29,18 @@
     "list": [
       {
         "id": "qa-senior",
-        "name": "Senior QA Agent",
-        "model": "ollama/qwen3-coder-next:cloud",
+        "name": "Senior QA Agent (OpenRouter)",
+        "model": "openrouter/google/gemini-2.0-flash-exp:free",
+        "skills": [
+          "test-specialist",
+          "qa-bug-investigation",
+          "self-improving"
+        ]
+      },
+      {
+        "id": "qa-senior-ollama",
+        "name": "Senior QA Agent (Ollama Local)",
+        "model": "ollama/minimax-m2.7:cloud",
         "skills": [
           "test-specialist",
           "qa-bug-investigation",
@@ -49,9 +59,9 @@
     "telegram": {
       "enabled": true,
       "dmPolicy": "pairing",
-      "botToken": "8376610224:",
+      "botToken": "8376610224:AAGzmRslcC8AjIvKvtNsUW0hMiH0SvaET4E",
       "allowFrom": [
-        729992
+        7299920006
       ],
       "groupPolicy": "allowlist",
       "streaming": "block"
@@ -62,14 +72,36 @@
       "ollama": {
         "models": [
           {
-            "id": "qwen3-coder-next:cloud",
-            "name": "Qwen 3 Coder Next",
+            "id": "minimax-m2.7:cloud",
+            "name": "Qwen 3 Coder Next (Ollama Local)",
             "reasoning": true
           }
         ],
         "baseUrl": "http://ollama:11434",
         "apiKey": "ollama-local",
         "api": "ollama"
+      },
+      "openrouter": {
+        "models": [
+          {
+            "id": "google/gemini-2.0-flash-exp:free",
+            "name": "Gemini 2.0 Flash (Free)",
+            "reasoning": true
+          },
+          {
+            "id": "google/gemini-2.5-pro-exp-03-25:free",
+            "name": "Gemini 2.5 Pro (Free)",
+            "reasoning": true
+          },
+          {
+            "id": "deepseek/deepseek-chat:free",
+            "name": "DeepSeek Chat (Free)",
+            "reasoning": true
+          }
+        ],
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "${OPENROUTER_API_KEY}",
+        "api": "openai-completions"
       }
     }
   },
